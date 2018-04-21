@@ -1,0 +1,17 @@
+{
+  "name": "google-search",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {},
+  "repository": "",
+  "engines": {
+    "node": ">= 4"
+  },
+  "author": "",
+  "devDependencies": {},
+  "dependencies": {
+    "request": "2.85.0",
+    "cheerio": "1.0.0-rc.2"
+  }
+}
