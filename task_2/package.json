@@ -3,14 +3,17 @@
   "version": "0.0.0",
   "description": "",
   "private": true,
+  "main": "index.js",
   "scripts": {
-    "start":"node index.js"
-    },
+    "start":"node index.js mode1",
+    "start:mode1": "node index.js mode1",
+    "start:mode2": "node index.js mode2",
+    "start:mode3": "node index.js mode3"
+  },
   "repository": "",
   "engines": {
     "node": ">= 8"
   },
-
   "author": "George",
   "devDependencies": {},
   "dependencies": {
