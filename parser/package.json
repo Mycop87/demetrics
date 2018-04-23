@@ -5,7 +5,9 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "node index.js $MODE"
+    "start":"npm run start:google",
+    "start:bing": "node index.js bing",
+    "start:google": "node index.js google"
   },
   "repository": "",
   "engines": {

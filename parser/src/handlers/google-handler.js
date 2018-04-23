@@ -9,7 +9,8 @@ const responseGoogleHandler = (error, response, body) => {
     const firstLink = links[0];
     const text      = $(firstLink).text();
     const url       = $(firstLink).attr('href')
-                                  .replace("/url?q=", "");
+                                  .replace("/url?q=", "")
+                                  .split("&")[0];
     
     return {text, url};
 }
