@@ -6,9 +6,9 @@
   "scripts": {},
   "repository": "",
   "engines": {
-    "node": ">= 4"
+    "node": ">= 8"
   },
-  "author": "",
+  "author": "George",
   "devDependencies": {},
   "dependencies": {
     "request": "2.85.0",
