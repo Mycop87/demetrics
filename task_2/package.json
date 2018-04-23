@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start":"node index.js mode1",
+    "start": "node index.js mode1",
     "start:mode1": "node index.js mode1",
     "start:mode2": "node index.js mode2",
     "start:mode3": "node index.js mode3"
