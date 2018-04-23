@@ -1,17 +1,5 @@
 "use strict"
 
-const stdin   = process.openStdin();
-const parse = require('./parsers');
+const bootstrap = require('./src/bootstrap');
 
-
-const initInput = handler => stdin.addListener("data", queryString => {
-  if(!parse(handler)){
-    console.log('invalid argument. use google or bing');
-    return;
-  }
-
-  parse(handler)(queryString.toString());
-
-});
-
-initInput(process.argv[2]);
+bootstrap(process.argv[2]);

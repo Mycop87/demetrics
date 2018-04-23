@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "description": "",
   "private": true,
-  "scripts": {},
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js $MODE"
+  },
   "repository": "",
   "engines": {
     "node": ">= 8"
