@@ -1,3 +1,5 @@
+"use strict"
+
 const cheerio = require('cheerio');
 
 const responseBingHandler = (error, response, body) => {
