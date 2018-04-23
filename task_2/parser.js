@@ -22,7 +22,7 @@ class Parser {
   mode2() {
     this.inputArray.forEach(inputLine => {
       this.patternArray.forEach(patternLine => {
-        if (inputLine.indexOf(patternLine.trim()) >= 0) {
+        if (inputLine.trim().indexOf(patternLine.trim()) >= 0) {
           console.log(inputLine);
         }
       });
