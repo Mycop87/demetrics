@@ -3,11 +3,11 @@
 const readFilePromise = require('fs-readfile-promise');
 const parser          = require('./parser');
 
-async function getData() {
+const getData = () => {
   const inputText   =  readFilePromise('./src/input.txt', 'utf8');
   const patternText =  readFilePromise('./src/patterns.txt', 'utf8');
 
-  return await Promise.all([inputText, patternText])
+  return Promise.all([inputText, patternText])
 }
 
 const getArrayFromText = ({inputText, patternText}) => {
@@ -27,6 +27,7 @@ const bootstrap = handler => {
     const inputText = files[0];
     const patternText = files[1];
     const {inputArray, patternArray} = getArrayFromText({inputText, patternText});
+    
     printData(parser({inputArray, patternArray}, handler));
   });
 
